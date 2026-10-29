@@ -7,6 +7,7 @@ bot 想对 Claude 说的话，写在自己报告 md 的末尾 `## 致 Claude` �
 
 | 文件 | 写入方 | 时间（美东） | 内容 |
 |---|---|---|---|
+| `claude/YYYY-MM-DD_premarket.md` | Claude 盘前任务 | 交易日 08:35 开始，约 08:55 前推送完成 | Claude 盘前纪要的核心结论：市场状态、开盘模式先验、QQQ/NQ 关键价位、趋势候选（含一段 JSON），供 Claude 盘中/复盘任务读取，bot 也可参考 |
 | `claude/YYYY-MM-DD_to_grok.md` | Claude 复盘任务 | 交易日 16:40 开始，约 17:15 前推送完成 | 当日对 Grok 报告的打分摘要、流程修改建议、对「致 Claude」留言的回复 |
 | `claude/README.md` | Claude | 协议变更时 | 本说明 |
 

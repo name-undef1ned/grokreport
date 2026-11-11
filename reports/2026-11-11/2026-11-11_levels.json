@@ -1,0 +1,553 @@
+{
+ "version": 1,
+ "date": "2026-11-11",
+ "stage": "final",
+ "generated_et": "2026-11-11 05:20:47 ET",
+ "levels": [
+  {
+   "sym": "QQQ",
+   "px": 701.18,
+   "lo": 700.86,
+   "hi": 701.45,
+   "stars": 2,
+   "score": 4.2,
+   "side": "阻力",
+   "dist_pct": 3.92,
+   "source_types": [
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "摆动低 10-23 701.16",
+    "摆动高 11-04 701.45",
+    "20日均线 700.86"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 目标 4"
+  },
+  {
+   "sym": "QQQ",
+   "px": 687.52,
+   "lo": 687.34,
+   "hi": 687.87,
+   "stars": 2,
+   "score": 5.3,
+   "side": "阻力",
+   "dist_pct": 1.89,
+   "source_types": [
+    "期权",
+    "结构"
+   ],
+   "sources": [
+    "Gamma 翻转 687.34",
+    "未补缺口上沿 11-05 687.87"
+   ],
+   "effect": "站上后减速/转稳（进入正 gamma）",
+   "scen": "A 目标 3"
+  },
+  {
+   "sym": "QQQ",
+   "px": 683.65,
+   "lo": 683.65,
+   "hi": 683.65,
+   "stars": 1,
+   "score": 1.8,
+   "side": "阻力",
+   "dist_pct": 1.32,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "未补缺口下沿 11-05 683.65"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 途经"
+  },
+  {
+   "sym": "QQQ",
+   "px": 682.86,
+   "lo": 682.65,
+   "hi": 683.12,
+   "stars": 2,
+   "score": 3.95,
+   "side": "阻力",
+   "dist_pct": 1.2,
+   "source_types": [
+    "期权",
+    "结构"
+   ],
+   "sources": [
+    "预期波动上沿 682.65",
+    "大阴线开盘 11-05 ×2.5量 683.12"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 目标 2"
+  },
+  {
+   "sym": "QQQ",
+   "px": 681.22,
+   "lo": 680.95,
+   "hi": 681.46,
+   "stars": 2,
+   "score": 5.93,
+   "side": "阻力",
+   "dist_pct": 0.96,
+   "source_types": [
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "前日高 680.95",
+    "200日均线 681.42",
+    "R1 681.46"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 目标 1"
+  },
+  {
+   "sym": "QQQ",
+   "px": 680.09,
+   "lo": 680.0,
+   "hi": 680.33,
+   "stars": 3,
+   "score": 6.15,
+   "side": "阻力",
+   "dist_pct": 0.79,
+   "source_types": [
+    "期权",
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "0DTE Call 墙 680",
+    "摆动低 11-02 680.33",
+    "Put 墙 680",
+    "整数关口 680"
+   ],
+   "effect": "突破后加速",
+   "scen": "C 箱体上沿 → 5m 收盘站上转 A"
+  },
+  {
+   "sym": "QQQ",
+   "px": 674.44,
+   "lo": 674.0,
+   "hi": 675.0,
+   "stars": 2,
+   "score": 4.76,
+   "side": "支撑",
+   "dist_pct": -0.05,
+   "source_types": [
+    "期权",
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "枢轴 P 674.25",
+    "前收 674.76",
+    "Max pain 674",
+    "整数关口 675"
+   ],
+   "effect": "突破后加速",
+   "scen": "C 箱体下沿 → 5m 收盘跌破转 B"
+  },
+  {
+   "sym": "QQQ",
+   "px": 667.13,
+   "lo": 666.87,
+   "hi": 667.56,
+   "stars": 2,
+   "score": 5.65,
+   "side": "支撑",
+   "dist_pct": -1.13,
+   "source_types": [
+    "期权",
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "前日低 667.05",
+    "预期波动下沿 666.87",
+    "S1 667.56"
+   ],
+   "effect": "突破后加速",
+   "scen": "B 目标 1"
+  },
+  {
+   "sym": "GC",
+   "px": 4157.14,
+   "lo": 4156.2,
+   "hi": 4157.7,
+   "stars": 2,
+   "score": 3.97,
+   "side": "阻力",
+   "dist_pct": 2.36,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "前日高（CME） 4156.2",
+    "箱体上沿（11-04 起） 4157.7",
+    "摆动高 11-09 4157.7"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "A 目标 1"
+  },
+  {
+   "sym": "GC",
+   "px": 4098.13,
+   "lo": 4097.2,
+   "hi": 4100.0,
+   "stars": 1,
+   "score": 3.0,
+   "side": "阻力",
+   "dist_pct": 0.91,
+   "source_types": [
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "摆动高 10-28 4097.2",
+    "整数关口 4100"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "A 途经"
+  },
+  {
+   "sym": "GC",
+   "px": 4074.75,
+   "lo": 4074.7,
+   "hi": 4075.0,
+   "stars": 2,
+   "score": 5.6,
+   "side": "阻力",
+   "dist_pct": 0.33,
+   "source_types": [
+    "枢轴",
+    "盘前",
+    "结构"
+   ],
+   "sources": [
+    "隔夜高 4074.7",
+    "前时段 VWAP 4074.74",
+    "整数关口 4075"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "C 箱体上沿 → 5m 收盘站上转 A"
+  },
+  {
+   "sym": "GC",
+   "px": 4069.34,
+   "lo": 4069.07,
+   "hi": 4069.55,
+   "stars": 1,
+   "score": 1.92,
+   "side": "阻力",
+   "dist_pct": 0.2,
+   "source_types": [
+    "枢轴"
+   ],
+   "sources": [
+    "20日均线 4069.55",
+    "枢轴 P 4069.07"
+   ],
+   "effect": "参考位（无期权 gamma）",
+   "scen": "箱体内参考"
+  },
+  {
+   "sym": "GC",
+   "px": 4042.95,
+   "lo": 4042.95,
+   "hi": 4042.95,
+   "stars": 1,
+   "score": 1.5,
+   "side": "支撑",
+   "dist_pct": -0.45,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "箱体中点（11-04 起） 4042.95"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "箱体内参考"
+  },
+  {
+   "sym": "GC",
+   "px": 4032.94,
+   "lo": 4030.2,
+   "hi": 4034.1,
+   "stars": 2,
+   "score": 4.83,
+   "side": "支撑",
+   "dist_pct": -0.7,
+   "source_types": [
+    "盘前",
+    "结构"
+   ],
+   "sources": [
+    "隔夜低 4034.1",
+    "大阴线开盘 10-30 ×1.4量 4033.6",
+    "前结算 4030.2"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "C 箱体下沿 → 5m 收盘跌破转 B"
+  },
+  {
+   "sym": "GC",
+   "px": 3989.1,
+   "lo": 3989.1,
+   "hi": 3989.1,
+   "stars": 1,
+   "score": 2.0,
+   "side": "支撑",
+   "dist_pct": -1.78,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "摆动低 10-23 3989.1"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "B 途经"
+  }
+ ],
+ "scenarios": [
+  {
+   "label": "A",
+   "sym": "QQQ",
+   "dir": "上",
+   "source": "report",
+   "probs": 0.3,
+   "trigger": 687.87,
+   "targets": [
+    700.0,
+    700.86
+   ],
+   "invalid": 686.5
+  },
+  {
+   "label": "B",
+   "sym": "QQQ",
+   "dir": "下",
+   "source": "report",
+   "probs": 0.4,
+   "trigger": 683.65,
+   "targets": [
+    681.2,
+    680.17
+   ],
+   "invalid": 685.5
+  },
+  {
+   "label": "C",
+   "sym": "QQQ",
+   "dir": "区间",
+   "source": "report",
+   "probs": null,
+   "upper": 687.87,
+   "lower": 683.65
+  },
+  {
+   "label": "A",
+   "sym": "GC",
+   "dir": "上",
+   "source": "report",
+   "probs": 0.25,
+   "trigger": 4075.0,
+   "targets": [
+    4100.0,
+    4157.14
+   ],
+   "invalid": 4070.64
+  },
+  {
+   "label": "B",
+   "sym": "GC",
+   "dir": "下",
+   "source": "report",
+   "probs": 0.35,
+   "trigger": 4030.2,
+   "targets": [
+    4020.8,
+    3989.1
+   ],
+   "invalid": 4038.16
+  },
+  {
+   "label": "C",
+   "sym": "GC",
+   "dir": "区间",
+   "source": "report",
+   "probs": null,
+   "upper": 4075.0,
+   "lower": 4030.2
+  }
+ ],
+ "trendday": {
+  "score": -0.5,
+  "level": "低",
+  "direction": "下",
+  "gap_pct": 0.0,
+  "groups": {
+   "跳空与位置": {
+    "score": 0.0,
+    "cap": "≤2",
+    "items": [
+     "纳指 盘前跳空 +0.00%（小，0）",
+     "盘前相对前日 VWAP 673.35 +0.21%（0）"
+    ]
+   },
+   "全市场广度": {
+    "score": -0.5,
+    "cap": "−2…+1.5",
+    "items": [
+     "小盘 RTY 期货 +0.55% 与纳指跳空反向（全市场不跟，−1）",
+     "IWM−纳指 -1.20pp（盘前，信息）",
+     "等权−市值加权（RSP 对照）-0.62pp：等权更弱/更强于市值权重，广度确认（+0.5）",
+     "ES +0.77% vs NQ +1.74%（0）",
+     "主题内部（仅参考，不计分）：半导体均值 +1.30%，AI+Mag7 18 只中 6% 同向"
+    ]
+   },
+   "风险偏好": {
+    "score": 0.0,
+    "cap": "−2…+2",
+    "items": [
+     "VIX -4.1%，与指数同向（无避险需求，−0.5）",
+     "VIX/VIX3M 0.904 正常升水（低开但无恐慌，−0.5）",
+     "HYG−IEF -0.19pp（0）",
+     "防御板块同步被卖（XLV -0.23%/XLP -0.73%/XLU -0.11%，均 -0.36%）= 降仓位（+1）",
+     "XLF +0.21%（参考）"
+    ]
+   },
+   "跳空归因": {
+    "score": 0.0,
+    "cap": "0 或 −1.5",
+    "items": [
+     "跳空 <0.3%，不做归因"
+    ]
+   },
+   "事件悬置": {
+    "score": 0.0,
+    "cap": "−1…+0.5",
+    "items": [
+     "无（0）"
+    ]
+   }
+  },
+  "regime_state": "内部轮动",
+  "regime_reason": "纳指 +0.00%，RTY 期货 +0.55%，防御均 -0.36%，VIX -4.1%，VIX/VIX3M 0.904：指数跳空小，看板块分化",
+  "ts": "2026-11-11 05:09 ET run",
+  "gap_attribution": null,
+  "thresholds": {
+   "高": 3.5,
+   "中": 2.0
+  }
+ },
+ "backdrop": {
+  "QQQ": null,
+  "GC": "11-04 以来在 3928.20–4157.70 区间运行（5 个交易日，宽 229.5 点 ≈ 2.4×ATR），中点 4042.95；高点 4155.80 → 4157.70；阳线日均量 0.2M vs 阴线日 0.2M；前收 4030.20 位于箱体下半区（距中点 -0.32%）。"
+ },
+ "ref": {
+  "QQQ": {
+   "ref": 674.76,
+   "buf": 0.67
+  },
+  "GC": {
+   "ref": 4061.3,
+   "buf": 4.06
+  }
+ },
+ "rules": {
+  "confirm": "5 分钟 K 线收盘越过价位，或越过 0.1% 缓冲；单根 1 分钟刺穿不算",
+  "open_window": "09:30–09:40 ET 的 K 线不作为剧本触发；触发需突破后下一根 5m 同向收盘，或突破后回踩不破",
+  "stars": "★★★ 需要 ≥2 种不同来源类型（结构/期权/枢轴/盘前）叠加"
+ },
+ "nq_conversion": {
+  "ratio": 41.2521,
+  "nq_prior_settle": 27835.25,
+  "proxy_prior_close": 674.76,
+  "session_date": "2026-11-10",
+  "method": "prior_settle_div_official_close",
+  "note": "前一交易日 /NQ 结算价（Yahoo NQ=F chartPreviousClose）÷ 现货代理常规时段官方收盘价（日线收盘 = 收盘竞价价）"
+ },
+ "catalyst_stocks": [
+  {
+   "ticker": "CRWV",
+   "rank": 1,
+   "score": 9.0,
+   "score_parts": {
+    "catalyst": 4,
+    "rvol": 2.5,
+    "attention": 2.5
+   },
+   "catalyst": "Q3 营收 $36.61亿 > 预期 $35.5亿；全年营收/营业利润指引上调；backlog $1,325亿",
+   "source": "CoreWeave 新闻稿（一手）+ CNBC/Yahoo",
+   "ts_taipei": "2026-11-11 05:00 后",
+   "gap_pct": 10.51,
+   "gap_ts_taipei": "2026-11-11 18:20 TradingView premarket",
+   "rvol_prev": 1.62,
+   "pm_volume_note": "盘前约 202 万股（早盘参考，稀薄）",
+   "attention": "高",
+   "level_above": 57.66,
+   "level_below": 51.02,
+   "level_below_2": 48.73,
+   "bias": "多",
+   "confirm": "09:40 后守住开盘15分钟低点且 5m 收盘在 51.02 上方 → 55 / 57.66",
+   "invalid": "5m 收盘跌破 51.02",
+   "nq_heavyweight": false,
+   "single_source_fields": [
+    "level_above(Blue Ocean 隔夜价)"
+   ]
+  },
+  {
+   "ticker": "MU",
+   "rank": 2,
+   "score": 7.5,
+   "score_parts": {
+    "catalyst": 3,
+    "rvol": 1.5,
+    "attention": 3
+   },
+   "catalyst": "韩国 11/1–10 半导体出口 +331% y/y；SK海力士+5.36%、三星+3.57%",
+   "source": "韩国关税厅 via financialjuice；Yahoo",
+   "ts_taipei": "2026-11-11 08:00",
+   "gap_pct": 5.94,
+   "gap_ts_taipei": "2026-11-11 18:20 TradingView premarket",
+   "rvol_prev": 0.81,
+   "pm_volume_note": "盘前约 31 万股（早盘参考）",
+   "attention": "高",
+   "level_above": 800.0,
+   "level_below": 745.64,
+   "level_below_2": 725.11,
+   "bias": "多（只做回踩）",
+   "confirm": "回踩 745.64 不破并站回开盘价，或 5m 站上盘前高且下一根同向 → 800",
+   "invalid": "5m 收盘跌破 745.64",
+   "nq_heavyweight": true
+  },
+  {
+   "ticker": "NVDA",
+   "rank": 3,
+   "score": 7.0,
+   "score_parts": {
+    "catalyst": 2,
+    "rvol": 3,
+    "attention": 2
+   },
+   "catalyst": "板块利好（韩国芯片出口、CRWV、TSMC 投资 Anthropic/OpenAI）vs 治理丑闻（Cramer 要求辞职、H200 流入军方大学）；11-10 已 -5.47% 放量",
+   "source": "financialjuice/FirstSquawk 多源",
+   "ts_taipei": "2026-11-11 08:00–13:07",
+   "gap_pct": 4.61,
+   "gap_ts_taipei": "2026-11-11 18:20 TradingView premarket",
+   "rvol_prev": 2.48,
+   "pm_volume_note": "盘前约 286 万股（早盘参考）",
+   "attention": "高（StockTwits 100% 看多=拥挤）",
+   "level_above": 180.0,
+   "level_below": 174.69,
+   "level_below_2": 168.89,
+   "bias": "轻仓偏多",
+   "confirm": "09:40 后 5m 站稳 174.69 且跑赢 SMH",
+   "invalid": "5m 收盘跌回 172 下方",
+   "nq_heavyweight": true
+  }
+ ]
+}

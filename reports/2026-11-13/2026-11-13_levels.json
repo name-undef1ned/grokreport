@@ -1,0 +1,527 @@
+{
+ "version": 1,
+ "date": "2026-11-13",
+ "stage": "final",
+ "generated_et": "2026-11-13 05:18:26 ET",
+ "levels": [
+  {
+   "sym": "QQQ",
+   "px": 701.31,
+   "lo": 701.16,
+   "hi": 701.45,
+   "stars": 1,
+   "score": 2.7,
+   "side": "阻力",
+   "dist_pct": 1.98,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "摆动低 10-23 701.16",
+    "摆动高 11-04 701.45"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 途经"
+  },
+  {
+   "sym": "QQQ",
+   "px": 698.63,
+   "lo": 698.63,
+   "hi": 698.63,
+   "stars": 1,
+   "score": 1.8,
+   "side": "阻力",
+   "dist_pct": 1.59,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "未补缺口下沿 10-30 698.63"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 途经"
+  },
+  {
+   "sym": "QQQ",
+   "px": 697.14,
+   "lo": 696.94,
+   "hi": 697.28,
+   "stars": 2,
+   "score": 3.65,
+   "side": "阻力",
+   "dist_pct": 1.37,
+   "source_types": [
+    "期权",
+    "枢轴"
+   ],
+   "sources": [
+    "预期波动上沿 697.28",
+    "20日均线 696.94"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 目标 4"
+  },
+  {
+   "sym": "QQQ",
+   "px": 695.6,
+   "lo": 695.21,
+   "hi": 696.0,
+   "stars": 3,
+   "score": 7.0,
+   "side": "阻力",
+   "dist_pct": 1.15,
+   "source_types": [
+    "期权",
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "箱体上沿（11-06 起） 695.57",
+    "0DTE Call 墙 696",
+    "摆动高 11-11 695.57",
+    "R1 695.21"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 目标 3"
+  },
+  {
+   "sym": "QQQ",
+   "px": 694.65,
+   "lo": 694.56,
+   "hi": 695.0,
+   "stars": 2,
+   "score": 4.03,
+   "side": "阻力",
+   "dist_pct": 1.01,
+   "source_types": [
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "前日高 694.56",
+    "整数关口 695"
+   ],
+   "effect": "突破后加速",
+   "scen": "A 目标 2"
+  },
+  {
+   "sym": "QQQ",
+   "px": 693.78,
+   "lo": 693.78,
+   "hi": 693.78,
+   "stars": 2,
+   "score": 3.5,
+   "side": "阻力",
+   "dist_pct": 0.88,
+   "source_types": [
+    "期权"
+   ],
+   "sources": [
+    "Gamma 翻转 693.78"
+   ],
+   "effect": "站上后减速/转稳（进入正 gamma）",
+   "scen": "A 目标 1"
+  },
+  {
+   "sym": "QQQ",
+   "px": 687.95,
+   "lo": 687.52,
+   "hi": 688.17,
+   "stars": 3,
+   "score": 8.74,
+   "side": "阻力",
+   "dist_pct": 0.04,
+   "source_types": [
+    "枢轴",
+    "盘前",
+    "结构"
+   ],
+   "sources": [
+    "盘前高 688.17",
+    "前日 VWAP 687.81",
+    "前收 688.17",
+    "枢轴 P 687.52"
+   ],
+   "effect": "突破后加速",
+   "scen": "C 箱体上沿 → 5m 收盘站上转 A"
+  },
+  {
+   "sym": "QQQ",
+   "px": 685.0,
+   "lo": 685.0,
+   "hi": 685.01,
+   "stars": 3,
+   "score": 6.68,
+   "side": "支撑",
+   "dist_pct": -0.39,
+   "source_types": [
+    "期权",
+    "枢轴",
+    "盘前"
+   ],
+   "sources": [
+    "盘前低 685.01",
+    "0DTE Put 墙 685",
+    "Max pain 685",
+    "整数关口 685"
+   ],
+   "effect": "突破后加速",
+   "scen": "C 箱体下沿 → 5m 收盘跌破转 B"
+  },
+  {
+   "sym": "QQQ",
+   "px": 683.12,
+   "lo": 683.12,
+   "hi": 683.12,
+   "stars": 1,
+   "score": 1.8,
+   "side": "支撑",
+   "dist_pct": -0.67,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "大阴线开盘 11-05 ×2.6量 683.12"
+   ],
+   "effect": "突破后加速",
+   "scen": "B 途经"
+  },
+  {
+   "sym": "QQQ",
+   "px": 680.16,
+   "lo": 679.83,
+   "hi": 680.55,
+   "stars": 3,
+   "score": 7.61,
+   "side": "支撑",
+   "dist_pct": -1.1,
+   "source_types": [
+    "期权",
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "前日低 679.83",
+    "摆动低 11-02 680.33",
+    "Put 墙 680",
+    "S1 680.48",
+    "5日 VWAP 680.55",
+    "整数关口 680"
+   ],
+   "effect": "先减速，有效跌破后加速",
+   "scen": "B 目标 1"
+  },
+  {
+   "sym": "QQQ",
+   "px": 674.86,
+   "lo": 674.78,
+   "hi": 675.0,
+   "stars": 1,
+   "score": 2.28,
+   "side": "支撑",
+   "dist_pct": -1.87,
+   "source_types": [
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "箱体中点（11-06 起） 674.78",
+    "整数关口 675"
+   ],
+   "effect": "突破后加速",
+   "scen": "B 途经"
+  },
+  {
+   "sym": "GC",
+   "px": 3989.1,
+   "lo": 3989.1,
+   "hi": 3989.1,
+   "stars": 1,
+   "score": 2.0,
+   "side": "阻力",
+   "dist_pct": 2.14,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "摆动低 10-23 3989.1"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "A 途经"
+  },
+  {
+   "sym": "GC",
+   "px": 3940.8,
+   "lo": 3940.8,
+   "hi": 3940.8,
+   "stars": 1,
+   "score": 1.8,
+   "side": "阻力",
+   "dist_pct": 0.9,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "大阳线开盘 11-04 ×1.4量 3940.8"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "A 途经"
+  },
+  {
+   "sym": "GC",
+   "px": 3927.24,
+   "lo": 3925.0,
+   "hi": 3928.2,
+   "stars": 2,
+   "score": 4.6,
+   "side": "阻力",
+   "dist_pct": 0.55,
+   "source_types": [
+    "枢轴",
+    "盘前",
+    "结构"
+   ],
+   "sources": [
+    "隔夜高 3927.2",
+    "大阳线起涨点 11-04 ×1.4量 3928.2",
+    "整数关口 3925"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "A 目标 1"
+  },
+  {
+   "sym": "GC",
+   "px": 3916.63,
+   "lo": 3915.97,
+   "hi": 3916.95,
+   "stars": 2,
+   "score": 3.7,
+   "side": "阻力",
+   "dist_pct": 0.28,
+   "source_types": [
+    "枢轴",
+    "结构"
+   ],
+   "sources": [
+    "前时段 VWAP 3916.95",
+    "枢轴 P 3915.97"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "C 箱体上沿 → 5m 收盘站上转 A"
+  },
+  {
+   "sym": "GC",
+   "px": 3885.3,
+   "lo": 3885.3,
+   "hi": 3885.3,
+   "stars": 1,
+   "score": 1.5,
+   "side": "支撑",
+   "dist_pct": -0.52,
+   "source_types": [
+    "结构"
+   ],
+   "sources": [
+    "前结算 3885.3"
+   ],
+   "effect": "参考位（无期权 gamma）",
+   "scen": "箱体内参考"
+  },
+  {
+   "sym": "GC",
+   "px": 3878.7,
+   "lo": 3875.0,
+   "hi": 3879.3,
+   "stars": 2,
+   "score": 5.1,
+   "side": "支撑",
+   "dist_pct": -0.69,
+   "source_types": [
+    "枢轴",
+    "盘前",
+    "结构"
+   ],
+   "sources": [
+    "隔夜低 3879.1",
+    "摆动低 10-30 3879.3",
+    "整数关口 3875"
+   ],
+   "effect": "突破后易延续（结构位，需 5m 确认）",
+   "scen": "C 箱体下沿 → 5m 收盘跌破转 B"
+  }
+ ],
+ "scenarios": [],
+ "trendday": {
+  "score": 0.0,
+  "level": "低",
+  "direction": "下",
+  "gap_pct": -0.07,
+  "groups": {
+   "跳空与位置": {
+    "score": 0.0,
+    "cap": "≤2",
+    "items": [
+     "纳指 盘前跳空 -0.07%（小，0）",
+     "盘前相对前日 VWAP 687.81 -0.02%（0）"
+    ]
+   },
+   "全市场广度": {
+    "score": 0.0,
+    "cap": "−2…+1.5",
+    "items": [
+     "小盘 RTY 期货 +0.08%（跟随弱，0）",
+     "IWM−纳指 +0.29pp（盘前，信息）",
+     "等权−市值加权（RSP 对照）+0.07pp（0）",
+     "主题内部（仅参考，不计分）：半导体均值 -0.57%，AI+Mag7 18 只中 56% 同向"
+    ]
+   },
+   "风险偏好": {
+    "score": 0.0,
+    "cap": "−2…+2",
+    "items": [
+     "VIX -0.9%（0）",
+     "VIX/VIX3M 0.924（0）",
+     "HYG/IEF 盘前无报价（信用 n/a）",
+     "防御板块 XLV -0.18%/XLP +0.41%/XLU +0.18%（0）",
+     "XLF +0.16%（参考）"
+    ]
+   },
+   "跳空归因": {
+    "score": 0.0,
+    "cap": "0 或 −1.5",
+    "items": [
+     "跳空 <0.3%，不做归因"
+    ]
+   },
+   "事件悬置": {
+    "score": 0.0,
+    "cap": "−1…+0.5",
+    "items": [
+     "开盘前数据（PPI）已在开盘前定价（0）"
+    ]
+   }
+  },
+  "regime_state": "内部轮动",
+  "regime_reason": "纳指 -0.07%，RTY 期货 +0.08%，防御均 +0.14%，VIX -0.9%，VIX/VIX3M 0.924：指数跳空小，看板块分化",
+  "ts": "2026-11-13 05:15 ET run",
+  "gap_attribution": null,
+  "thresholds": {
+   "高": 3.5,
+   "中": 2.0
+  }
+ },
+ "backdrop": {
+  "QQQ": "11-06 以来在 653.99–695.57 区间运行（5 个交易日，宽 41.6 点 ≈ 2.3×ATR），中点 674.78；高点 682.48 → 695.57；放量日：11-06 70.7M（阴）；阳线日均量 43.8M vs 阴线日 70.7M；前收 688.17 位于箱体上半区（距中点 +1.98%）。",
+  "GC": null
+ },
+ "ref": {
+  "QQQ": {
+   "ref": 687.7,
+   "buf": 0.69
+  },
+  "GC": {
+   "ref": 3905.6,
+   "buf": 3.91
+  }
+ },
+ "rules": {
+  "confirm": "5 分钟 K 线收盘越过价位，或越过 0.1% 缓冲；单根 1 分钟刺穿不算",
+  "open_window": "09:30–09:40 ET 的 K 线不作为剧本触发；触发需突破后下一根 5m 同向收盘，或突破后回踩不破",
+  "stars": "★★★ 需要 ≥2 种不同来源类型（结构/期权/枢轴/盘前）叠加"
+ },
+ "nq_conversion": {
+  "ratio": 41.2463,
+  "nq_prior_settle": 28384.5,
+  "proxy_prior_close": 688.17,
+  "session_date": "2026-11-12",
+  "method": "prior_settle_div_official_close",
+  "note": "前一交易日 /NQ 结算价（Yahoo NQ=F chartPreviousClose）÷ 现货代理常规时段官方收盘价（日线收盘 = 收盘竞价价）"
+ },
+ "catalyst_stocks": [
+  {
+   "ticker": "NVDA",
+   "rank": 1,
+   "score": 10.0,
+   "score_breakdown": {
+    "catalyst": 4,
+    "volume": 3,
+    "attention": 3
+   },
+   "catalyst": "公司官方公告+8-K：董事会于 11-11 接受黄仁勋辞去总裁、CEO 及董事，立即生效；CFO Colette Kress 任临时 CEO 并继续兼任 CFO；Harvey C. Jones 任董事会首位主席；11-17 盘后财报日程不变。新闻稿日期 11-12，GlobeNewswire 约 08:48 ET（21:48 台北）发布，发生在昨日报截稿之后，已在 11-12 常规时段交易。",
+   "source": "NVIDIA Newsroom / Form 8-K (event date 2026-11-11, filed 2026-11-12) / GlobeNewswire 08:48 ET",
+   "ts_taipei": "2026-11-13 18:15",
+   "gap_pct": 1.94,
+   "rvol_prev": 3.18,
+   "attention": "高",
+   "level_above": 170.77,
+   "level_below": 166.19,
+   "bias": "观望关键位",
+   "confirm": "09:40 后 5 分钟收盘重新站上 170.77（11-11 低）并守住",
+   "invalid": "09:40 后 5 分钟收盘重新跌回 166.19（11-12 收盘）下方，或失守盘前低 162.71",
+   "prior_close": 166.19,
+   "pm_last": 169.42,
+   "pm_high": 169.95,
+   "pm_low": 162.71,
+   "pm_volume": 6657142,
+   "mcap_bn": 4013.0,
+   "nq_heavyweight": true
+  },
+  {
+   "ticker": "MSFT",
+   "rank": 2,
+   "score": 8.0,
+   "score_breakdown": {
+    "catalyst": 3.5,
+    "volume": 2.0,
+    "attention": 2.5
+   },
+   "catalyst": "Microsoft 365 全球中断，Outlook、Teams、Copilot 等受影响。CNBC/The Guardian 报道服务中断；盘前约 −2.53%。ApeWisdom 全市场提及 24h +196%。",
+   "source": "CNBC 2026-11-12; The Guardian 2026-11-13; Nasdaq 盘前报价 05:08 ET",
+   "ts_taipei": "2026-11-13 18:15",
+   "gap_pct": -2.53,
+   "rvol_prev": 0.54,
+   "attention": "高",
+   "level_above": 523.0,
+   "level_below": 506.12,
+   "bias": "观望关键位",
+   "confirm": "09:40 后 5 分钟收盘收回 523.00（11-12 收盘）",
+   "invalid": "09:40 后 5 分钟收盘继续留在盘前低 506.12 下方",
+   "prior_close": 523.0,
+   "pm_last": 509.75,
+   "pm_high": 519.9,
+   "pm_low": 506.12,
+   "pm_volume": 378246,
+   "mcap_bn": 3883.9,
+   "nq_heavyweight": true
+  },
+  {
+   "ticker": "CSCO",
+   "rank": 3,
+   "score": 7.5,
+   "score_breakdown": {
+    "catalyst": 4,
+    "volume": 1.5,
+    "attention": 2
+   },
+   "catalyst": "公司新闻稿：FY27 Q1 营收 $185 亿（+24% YoY），non-GAAP EPS $1.40（+40%）；上调 FY27 营收至 $748–758 亿、non-GAAP EPS $5.47–5.53；Q2 营收指引 $180–182 亿、non-GAAP EPS $1.34–1.36。将 FY27 来自超大规模客户的 AI 基础设施收入预期上调至 $90 亿（称超过 FY26 总额一倍）。CNBC/LSEG：Q1 营收/EPS 与 Q2 指引均高于共识。non-GAAP 毛利率 65.6% 低于上年同期 68.1%。盘后一度上涨（CNBC），今早流水线报价约 −1.98%，但无 Nasdaq 盘前成交量，早盘参考、报价质量弱。",
+   "source": "Cisco Newsroom 2026-11-12; CNBC 16:11–16:20 ET 11-12（LSEG 共识）",
+   "ts_taipei": "2026-11-13 18:15",
+   "gap_pct": -1.98,
+   "rvol_prev": 1.1,
+   "attention": "中",
+   "level_above": 102.01,
+   "level_below": 99.99,
+   "bias": "观望关键位",
+   "confirm": "09:40 后 5 分钟收盘重新站上 102.01（11-12 收盘）",
+   "invalid": "09:40 后 5 分钟收盘留在约 99.99（早盘参考价）下方；因早盘报价无量，开盘后以第一组 5 分钟实际低点替换该失效位",
+   "prior_close": 102.01,
+   "pm_last": 99.99,
+   "pm_high": null,
+   "pm_low": null,
+   "pm_volume": null,
+   "mcap_bn": 402.2,
+   "nq_heavyweight": true,
+   "note": "早盘跳空为流水线/Yahoo 报价，无 Nasdaq 盘前量，单一来源且质量弱"
+  }
+ ]
+}

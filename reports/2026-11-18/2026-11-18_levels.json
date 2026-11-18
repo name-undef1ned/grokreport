@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "date": "2026-11-18",
+  "stage": "final",
+  "generated_et": "2026-11-18 05:21:00 ET",
+  "generated_taipei": "2026-11-18 18:21 Asia/Taipei",
+  "scenarios": [],
+  "scope": "ETH /ES; RTH SPY (volume/RVOL/OHLC) or SPX (index levels, no directly traded volume); gold /GC. Independent catalyst stock picks retained. No NQ trade recommendations. Do not relabel Nasdaq gamma/ratios as S&P.",
+  "session_definitions": {
+    "ES": "CME Globex ETH; official settlement distinct from 16:15 snapshot and from SPX/SPY 16:00 ET cash close",
+    "SPY": "NYSE Arca RTH 09:30-16:00 ET; used for traded volume, RVOL, official cash OHLC",
+    "SPX": "S&P 500 cash index official RTH levels only; no directly traded volume",
+    "GC": "COMEX GC futures; prior_* = prior complete CME session; overnight = Globex since 18:00 ET; not equity GEX"
+  },
+  "basis": {
+    "es_official_settle_2026-11-17": 7359.0,
+    "spx_official_close_2026-11-17": 7340.53,
+    "spy_official_close_2026-11-17": 732.44,
+    "es_minus_spx_pts": 18.47,
+    "contract_note": "Yahoo ES=F front month; Barchart/Yahoo coverage named ESZ26 December (single source)",
+    "note": "Do not equate raw points across ES/SPX/SPY. Basis is settlement minus cash close, not a convertible ratio for trading levels."
+  },
+  "legacy_nasdaq_proxy": {
+    "note": "Pipeline still writes QQQ/NQ working files for continuity. Those numbers are not S&P levels and are not trade recommendations in this report."
+  },
+  "ref": {
+    "ES": {
+      "ref": 7399.0,
+      "buf": 7.4,
+      "source": "Yahoo ES=F ~18:21 Taipei; overnight high 7434.75 low 7364.00"
+    },
+    "SPY": {
+      "ref": 732.44,
+      "buf": 0.73,
+      "source": "Tuesday official close; PM 736.90 Nasdaq 05:12 ET still early/thin"
+    },
+    "SPX": {
+      "ref": 7340.53,
+      "buf": 7.34,
+      "source": "Tuesday official close; no live official premarket index used"
+    },
+    "GC": {
+      "ref": 3775.0,
+      "buf": 3.78,
+      "source": "Yahoo GC=F ~18:21 Taipei"
+    }
+  },
+  "backdrop": {
+    "GC": null
+  },
+  "rules": {
+    "confirm": "5 分钟 K 线收盘越过价位，或越过 0.1% 缓冲；单根 1 分钟刺穿不算",
+    "open_window": "09:30–09:40 ET 的 K 线不作为确认；触发需突破后下一根 5m 同向收盘，或突破后回踩不破",
+    "stars": "★★★ 需要明确的官方收盘/结算或已被多次引用的结构低/高；盘前位单独使用时须标明量薄"
+  },
+  "levels": [
+    {
+      "sym": "ES",
+      "px": 7456.75,
+      "lo": 7456.75,
+      "hi": 7456.75,
+      "stars": 2,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 0.78,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二会话高 7456.75"
+      ],
+      "effect": "突破后需 5m 确认",
+      "scen": ""
+    },
+    {
+      "sym": "ES",
+      "px": 7439.0,
+      "lo": 7439.0,
+      "hi": 7439.0,
+      "stars": 3,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 0.54,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周一官方结算 7439.00"
+      ],
+      "effect": "突破后需 5m 确认",
+      "scen": ""
+    },
+    {
+      "sym": "ES",
+      "px": 7434.75,
+      "lo": 7434.75,
+      "hi": 7434.75,
+      "stars": 2,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 0.48,
+      "source_types": [
+        "盘前"
+      ],
+      "sources": [
+        "周三 Globex 隔夜高 Yahoo 7434.75"
+      ],
+      "effect": "盘中回落后的近端阻力",
+      "scen": ""
+    },
+    {
+      "sym": "ES",
+      "px": 7364.0,
+      "lo": 7364.0,
+      "hi": 7364.0,
+      "stars": 2,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": -0.47,
+      "source_types": [
+        "盘前"
+      ],
+      "sources": [
+        "周三 Globex 隔夜低 7364.00"
+      ],
+      "effect": "跌破后看结算",
+      "scen": ""
+    },
+    {
+      "sym": "ES",
+      "px": 7359.0,
+      "lo": 7359.0,
+      "hi": 7359.0,
+      "stars": 3,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": -0.54,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二官方结算 7359.00"
+      ],
+      "effect": "跌破后看周二低",
+      "scen": ""
+    },
+    {
+      "sym": "ES",
+      "px": 7308.0,
+      "lo": 7308.0,
+      "hi": 7308.0,
+      "stars": 3,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": -1.23,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二会话低 7308.00"
+      ],
+      "effect": "结构低",
+      "scen": ""
+    },
+    {
+      "sym": "SPY",
+      "px": 754.37,
+      "lo": 749.82,
+      "hi": 754.37,
+      "stars": 2,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 2.99,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "未补向下缺口 749.82-754.37（11-13 收至 11-16 高）"
+      ],
+      "effect": "缺口上沿",
+      "scen": ""
+    },
+    {
+      "sym": "SPY",
+      "px": 739.95,
+      "lo": 739.76,
+      "hi": 739.95,
+      "stars": 2,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 1.03,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周一收 739.95 / 周二高 739.76（小缺口未完全回补）"
+      ],
+      "effect": "近端现金阻力",
+      "scen": ""
+    },
+    {
+      "sym": "SPY",
+      "px": 737.39,
+      "lo": 737.39,
+      "hi": 737.39,
+      "stars": 1,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 0.68,
+      "source_types": [
+        "盘前"
+      ],
+      "sources": [
+        "盘前高 737.39（Nasdaq 05:12 ET，量薄）"
+      ],
+      "effect": "量薄，仅作参考",
+      "scen": ""
+    },
+    {
+      "sym": "SPY",
+      "px": 732.44,
+      "lo": 732.44,
+      "hi": 732.44,
+      "stars": 3,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": 0.0,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二官方收盘 732.44"
+      ],
+      "effect": "收盘位",
+      "scen": ""
+    },
+    {
+      "sym": "SPY",
+      "px": 727.0,
+      "lo": 727.0,
+      "hi": 727.0,
+      "stars": 3,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": -0.74,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二低 727.00"
+      ],
+      "effect": "结构低",
+      "scen": ""
+    },
+    {
+      "sym": "SPX",
+      "px": 7416.59,
+      "lo": 7415.37,
+      "hi": 7416.59,
+      "stars": 2,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 1.04,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周一官方收 7416.59 / 周二高 7415.37"
+      ],
+      "effect": "指数点位，无直接成交量",
+      "scen": ""
+    },
+    {
+      "sym": "SPX",
+      "px": 7340.53,
+      "lo": 7340.53,
+      "hi": 7340.53,
+      "stars": 3,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": 0.0,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二官方收 7340.53"
+      ],
+      "effect": "指数点位，无直接成交量",
+      "scen": ""
+    },
+    {
+      "sym": "SPX",
+      "px": 7288.34,
+      "lo": 7288.34,
+      "hi": 7288.34,
+      "stars": 3,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": -0.71,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二低 7288.34"
+      ],
+      "effect": "指数点位，无直接成交量",
+      "scen": ""
+    },
+    {
+      "sym": "GC",
+      "px": 3894.0,
+      "lo": 3894.0,
+      "hi": 3894.0,
+      "stars": 2,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 3.15,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "周二 CME 高 3894.0"
+      ],
+      "effect": "突破后需 5m 确认",
+      "scen": ""
+    },
+    {
+      "sym": "GC",
+      "px": 3864.2,
+      "lo": 3859.3,
+      "hi": 3864.2,
+      "stars": 2,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 2.36,
+      "source_types": [
+        "结构",
+        "盘前"
+      ],
+      "sources": [
+        "前结算 3864.2 / 隔夜高 3859.3"
+      ],
+      "effect": "收回前结算前的近端阻力带",
+      "scen": ""
+    },
+    {
+      "sym": "GC",
+      "px": 3835.2,
+      "lo": 3835.2,
+      "hi": 3839.2,
+      "stars": 3,
+      "score": null,
+      "side": "阻力",
+      "dist_pct": 1.59,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "原 20 日/52 周低 3835.2 与周二低 3839.2，跌破后上翻"
+      ],
+      "effect": "结构翻转带",
+      "scen": ""
+    },
+    {
+      "sym": "GC",
+      "px": 3759.9,
+      "lo": 3759.9,
+      "hi": 3759.9,
+      "stars": 2,
+      "score": null,
+      "side": "支撑",
+      "dist_pct": -0.4,
+      "source_types": [
+        "盘前"
+      ],
+      "sources": [
+        "周三 Globex 隔夜低 3759.9（新的可见低）"
+      ],
+      "effect": "再往下无近 20 日已验证结构，不编更远目标",
+      "scen": ""
+    }
+  ],
+  "catalyst_stocks": [
+    {
+      "ticker": "NVDA",
+      "rank": 1,
+      "score": 9.5,
+      "score_breakdown": {
+        "catalyst": 4,
+        "volume": 2.5,
+        "attention": 3
+      },
+      "catalyst": "11-17 盘后公司新闻稿：FY27 Q3 营收 $115.8B（同比 +103%），非 GAAP EPS $2.68，数据中心 $107.6B，Vera Rubin NVL72 已出货（一手）。覆盖称 Q4 营收展望 $130B ±3%（含额外一周、不含中国数据中心计算），毛利率指引 71%–72%（Fortune 等，待核原文）。电话会：Q3 仍有 $2.4B 许可 Hopper 销往中国，但指引不再包含且已不再出货（Bloomberg 援引 Kress，05:05 ET 发稿，内容来自电话会）。Yahoo 直播标题另写董事会不会请回黄仁勋（二手，未核到公司稿原句）。周二收 155.46（-0.44%，低 150.33），盘前约 +3.78% 至 161.34。",
+      "source": "NVIDIA/GlobeNewswire 11-17; Fortune/call coverage; Bloomberg 05:05 ET; Nasdaq premarket 05:13 ET",
+      "ts_taipei": "2026-11-18 18:21",
+      "gap_pct": 3.78,
+      "rvol_prev": 1.17,
+      "attention": "高（ApeWisdom/WSB #1，提及 2059 vs 24h 前 1162）",
+      "level_above": 158.19,
+      "level_below": 155.46,
+      "evidence": "周二 CLV 0.65，RVOL≈1.17；盘前量 677 万股为早盘参考但相对不薄；05:05 报道后快照未见单独跳跃",
+      "bias": "数字已出；看常规时段是否确认关键位",
+      "confirm": "09:40 ET 后 5 分钟收盘站上 158.19，更强为 161.68（盘前，早盘参考）或 163.20",
+      "invalid": "5 分钟收盘跌破 155.46；更弱看 150.33（周二低）"
+    },
+    {
+      "ticker": "TGT",
+      "rank": 2,
+      "score": 6.0,
+      "score_breakdown": {
+        "catalyst": 3.5,
+        "volume": 1,
+        "attention": 1
+      },
+      "catalyst": "公司 11-17 新闻稿确认今日 08:00 ET / 07:00 CT 召开 Q3 电话会。流水线共识 EPS 约 $2.05（单一来源）。结果待公布。周二收 159.53（-0.49%，CLV 0.66，量 5.86M）。截稿 Yahoo 无盘前报价。",
+      "source": "Target IR / PRNewswire 11-17; pipeline earnings feed EPS; Yahoo 05:21 ET no premarket quote",
+      "ts_taipei": "2026-11-18 18:21",
+      "gap_pct": null,
+      "rvol_prev": null,
+      "attention": "低",
+      "level_above": 159.53,
+      "level_below": 156.14,
+      "evidence": "电话会时间已由公司一手确认；数字未出；无盘前价量，不能当跳空证据",
+      "bias": "财报待公布；暂无盘前价位",
+      "confirm": "09:40 ET 后 5 分钟收盘站上 159.53，更强 161.27（财报后区间可能重置）",
+      "invalid": "5 分钟收盘跌破 156.14（周二低）"
+    },
+    {
+      "ticker": "PANW",
+      "rank": 3,
+      "score": 5.5,
+      "score_breakdown": {
+        "catalyst": 3,
+        "volume": 1,
+        "attention": 1
+      },
+      "catalyst": "今日盘后公布 FY Q1；events.json 记 TradingView next_date_confirmed=true（11-06 核对）。流水线 EPS 共识约 $0.52（单一来源）。结果待公布。周二开=高 316.05、低 301.28、收 309.29（-2.15%）。盘前约 +1.93% 至 315.26，未见盘前量。",
+      "source": "TradingView earnings calendar (checked 2026-11-06); pipeline earnings feed; premkt last 315.26 without Nasdaq volume",
+      "ts_taipei": "2026-11-18 18:21",
+      "gap_pct": 1.93,
+      "rvol_prev": 1.18,
+      "attention": "低",
+      "level_above": 316.05,
+      "level_below": 309.29,
+      "evidence": "日期此前已确认；盘前涨幅因量缺失不能当跳空证据；财报待公布",
+      "bias": "财报待公布；盘前价位暂定",
+      "confirm": "09:40 ET 后 5 分钟收盘站上 316.05（财报后区间可能重置）",
+      "invalid": "5 分钟收盘跌破 309.29；更弱 301.28"
+    }
+  ],
+  "rvol": {
+    "SPY": {
+      "prior_session_volume": 71408000,
+      "prior_10d_mean_ending_2026-11-16": 55540830,
+      "prior_20d_mean_ending_2026-11-16": 48462225,
+      "rvol_10d": 1.29,
+      "rvol_20d": 1.47,
+      "clv": 0.426,
+      "session_date": "2026-11-17",
+      "note": "Down day, so not tagged 缩量. 11-05 125.9M is in both the 10- and 20-session denominators. Volumes from Yahoo daily bars."
+    }
+  }
+}

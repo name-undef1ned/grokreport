@@ -1,0 +1,476 @@
+{
+  "version": 1,
+  "date": "2026-11-20",
+  "stage": "final",
+  "generated_et": "2026-11-20 05:25:27 ET",
+  "levels": [
+    {
+      "sym": "QQQ",
+      "px": 658.3,
+      "lo": 658.24,
+      "hi": 658.44,
+      "stars": 2,
+      "score": 4.55,
+      "side": "阻力",
+      "dist_pct": 3.39,
+      "source_types": [
+        "枢轴",
+        "结构"
+      ],
+      "sources": [
+        "前日 VWAP 658.24",
+        "5日 VWAP 658.44"
+      ],
+      "effect": "突破后易延续（结构位，需 5m 确认）",
+      "scen": "A 目标 1"
+    },
+    {
+      "sym": "QQQ",
+      "px": 647.05,
+      "lo": 647.05,
+      "hi": 647.05,
+      "stars": 1,
+      "score": 2.0,
+      "side": "阻力",
+      "dist_pct": 1.62,
+      "source_types": [
+        "结构"
+      ],
+      "sources": [
+        "摆动低 11-05 647.05"
+      ],
+      "effect": "突破后易延续（结构位，需 5m 确认）",
+      "scen": "A 途经"
+    },
+    {
+      "sym": "QQQ",
+      "px": 644.52,
+      "lo": 644.34,
+      "hi": 645.04,
+      "stars": 3,
+      "score": 6.18,
+      "side": "阻力",
+      "dist_pct": 1.23,
+      "source_types": [
+        "枢轴",
+        "结构"
+      ],
+      "sources": [
+        "前日低 644.34",
+        "箱体下沿（11-13 起） 644.34",
+        "20日低 644.34",
+        "前收 645.04",
+        "整数关口 645"
+      ],
+      "effect": "突破后易延续（结构位，需 5m 确认）",
+      "scen": "C 箱体上沿 → 5m 收盘站上转 A"
+    },
+    {
+      "sym": "QQQ",
+      "px": 641.82,
+      "lo": 641.82,
+      "hi": 641.82,
+      "stars": 1,
+      "score": 3.25,
+      "side": "阻力",
+      "dist_pct": 0.8,
+      "source_types": [
+        "盘前"
+      ],
+      "sources": [
+        "盘前高 641.82"
+      ],
+      "effect": "突破后易延续（结构位，需 5m 确认）",
+      "scen": "箱体内参考"
+    },
+    {
+      "sym": "QQQ",
+      "px": 634.46,
+      "lo": 634.09,
+      "hi": 635.0,
+      "stars": 2,
+      "score": 5.47,
+      "side": "支撑",
+      "dist_pct": -0.35,
+      "source_types": [
+        "枢轴",
+        "盘前"
+      ],
+      "sources": [
+        "盘前低 634.55",
+        "S1 634.09",
+        "整数关口 635"
+      ],
+      "effect": "突破后易延续（结构位，需 5m 确认）",
+      "scen": "C 箱体下沿 → 5m 收盘跌破转 B"
+    },
+    {
+      "sym": "GC",
+      "px": 3619.84,
+      "lo": 3617.57,
+      "hi": 3620.6,
+      "stars": 2,
+      "score": 4.7,
+      "side": "阻力",
+      "dist_pct": 1.4,
+      "source_types": [
+        "枢轴",
+        "结构"
+      ],
+      "sources": [
+        "前日低（CME） 3620.6",
+        "20日低 3620.6",
+        "S1 3617.57"
+      ],
+      "effect": "突破后易延续（结构位，需 5m 确认）",
+      "scen": "C 箱体上沿 → 5m 收盘站上转 A"
+    },
+    {
+      "sym": "GC",
+      "px": 3514.9,
+      "lo": 3514.9,
+      "hi": 3514.9,
+      "stars": 1,
+      "score": 2.5,
+      "side": "支撑",
+      "dist_pct": -1.54,
+      "source_types": [
+        "盘前"
+      ],
+      "sources": [
+        "隔夜低 3514.9"
+      ],
+      "effect": "突破后易延续（结构位，需 5m 确认）",
+      "scen": "箱体内参考"
+    }
+  ],
+  "scenarios": [],
+  "trendday": {
+    "score": 0.8,
+    "level": "低",
+    "direction": "下",
+    "gap_pct": -1.29,
+    "groups": {
+      "跳空与位置": {
+        "score": 2.0,
+        "cap": "≤2",
+        "items": [
+          "纳指 盘前跳空 -1.29%（大，+1.5）",
+          "盘前在前日 VWAP 658.24 下方 3.27%（同向，+0.5）"
+        ]
+      },
+      "全市场广度": {
+        "score": -0.75,
+        "cap": "−2…+1.5",
+        "items": [
+          "小盘 RTY 期货 -0.40%（跟随弱，0）",
+          "IWM−纳指 +1.24pp（盘前，信息）",
+          "等权−市值加权（RSP 对照）+0.62pp：等权抗住、市值权重拖累（−0.75）",
+          "ES -0.78% vs NQ -1.67%（0）",
+          "主题内部（仅参考，不计分）：半导体均值 -3.42%，AI+Mag7 18 只中 94% 同向"
+        ]
+      },
+      "风险偏好": {
+        "score": -0.5,
+        "cap": "−2…+2",
+        "items": [
+          "HYG−IEF -0.36pp，信用同向确认（+0.5）",
+          "防御板块被买入（XLV +0.58%/XLP +1.19%/XLU +0.30%，均 +0.69%）= 轮动而非降仓（−1）",
+          "XLF +0.72%（参考）"
+        ]
+      },
+      "跳空归因": {
+        "score": 0.0,
+        "cap": "0 或 −1.5",
+        "items": [
+          "最大贡献 NVDA -0.33pp（26% 的跳空，分散，0）",
+          "前十大权重贡献合计 -1.23pp：NVDA -0.33pp、SPCX -0.17pp、MSFT -0.16pp、AVGO -0.13pp（权重为近似市值权重，2026-10-29）"
+        ]
+      },
+      "事件悬置": {
+        "score": 0.0,
+        "cap": "−1…+0.5",
+        "items": [
+          "无（0）"
+        ]
+      }
+    },
+    "regime_state": "内部轮动",
+    "regime_reason": "纳指 -1.29%，RTY 期货 -0.40%，防御均 +0.69%，VIX n/a，VIX/VIX3M n/a，NVDA 占跳空 26%：防御被买、等权抗跌 → 资金在板块间换手，不是整体降仓",
+    "ts": "2026-11-20 05:08 ET run",
+    "gap_attribution": {
+      "top": "NVDA",
+      "top_pp": -0.334,
+      "share": 0.26,
+      "topN_sum_pp": -1.232,
+      "contrib": {
+        "NVDA": -0.334,
+        "SPCX": -0.169,
+        "MSFT": -0.159,
+        "AVGO": -0.133,
+        "AMD": -0.12,
+        "AMZN": -0.115,
+        "MU": -0.106,
+        "META": -0.088,
+        "TSLA": -0.076,
+        "GOOGL": -0.021,
+        "AAPL": 0.043,
+        "WMT": 0.047
+      }
+    },
+    "thresholds": {
+      "高": 3.5,
+      "中": 2.0
+    }
+  },
+  "backdrop": {
+    "QQQ": "11-13 以来在 644.34–688.75 区间运行（5 个交易日，宽 44.4 点 ≈ 2.3×ATR），中点 666.55；高点 688.75 → 676.49；放量日：11-19 70.9M（阴）；前收 645.04 位于箱体下半区（距中点 -3.23%）。",
+    "GC": null
+  },
+  "ref": {
+    "QQQ": {
+      "ref": 636.71,
+      "buf": 0.64
+    },
+    "GC": {
+      "ref": 3569.7,
+      "buf": 3.57
+    }
+  },
+  "rules": {
+    "confirm": "5 分钟 K 线收盘越过价位，或越过 0.1% 缓冲；单根 1 分钟刺穿不算",
+    "open_window": "09:30–09:40 ET 的 K 线不作为剧本触发；触发需突破后下一根 5m 同向收盘，或突破后回踩不破",
+    "stars": "★★★ 需要 ≥2 种不同来源类型（结构/期权/枢轴/盘前）叠加"
+  },
+  "nq_conversion": {
+    "ratio": 41.2381,
+    "nq_prior_settle": 26600.25,
+    "proxy_prior_close": 645.04,
+    "session_date": "2026-11-19",
+    "method": "prior_settle_div_official_close",
+    "note": "前一交易日 /NQ 结算价（Yahoo NQ=F chartPreviousClose）÷ 现货代理常规时段官方收盘价（日线收盘 = 收盘竞价价）"
+  },
+  "catalyst_stocks": [
+    {
+      "ticker": "INTU",
+      "rank": 1,
+      "score": 8.0,
+      "score_breakdown": {
+        "catalyst": 4.0,
+        "volume": 1.2,
+        "attention": 2.8
+      },
+      "catalyst": "11-19 16:00 ET 公司稿：FY27 Q1 营收 $4.4B（+12%），GAAP EPS $2.59，non-GAAP EPS $2.91。上修全年营收 $23.081B–$23.365B（称因 Credit Karma），重申全年利润与 EPS（non-GAAP EPS $22.88–$23.12）。Q2 营收指引 $4.931B–$4.954B（+6%–7%），non-GAAP EPS $3.17–$3.22。宣布向 Bending Spoons 出售 Mailchimp，对价约 $3.68B（现金 $3.31B + 股票 $0.368B），指引不含该交易。路透称 Q2 营收指引低于预期（二手标题，未见一致预期点值）。周四收 310.02（RVOL 1.67）。盘前约 283.20（−8.65%），量仅 7,703 股，极早极薄。",
+      "source": "Intuit / BusinessWire 一手 11-19 16:00 ET; Reuters/CNBC 二手对照; TradingView daily + premarket",
+      "ts_taipei": "2026-11-20 18:25",
+      "gap_pct": -8.65,
+      "rvol_prev": 1.67,
+      "attention": "中高（通讯社与评级更新多；非 WSB 前十）",
+      "level_above": 302.59,
+      "level_below": 283.2,
+      "evidence": "一手 Q1 与指引可核对；营收指引因 Credit Karma 下调；Mailchimp 负增长并以低于 2021 年收购价的对价出售；盘前跌幅大但量极薄",
+      "bias": "数字与剥离已出；看常规时段是否确认低开，而不是把薄量盘前价当成定价",
+      "confirm": "09:40 ET 后 5 分钟收盘站上 302.59（周四低）或 310.02（周四收）",
+      "invalid": "5 分钟收盘跌破盘前参考 283.20（量薄，仅参考）；开盘后真实低点需用 RTH 重置"
+    },
+    {
+      "ticker": "AMD",
+      "rank": 2,
+      "score": 7.2,
+      "score_breakdown": {
+        "catalyst": 3.6,
+        "volume": 2.2,
+        "attention": 1.4
+      },
+      "catalyst": "11-19 RTH，Hunterbrook Media 做空报告并披露空头：称实体清单上的 IEIT 在清单后仍发布含较新 AMD 固件的 BIOS，并指关联品牌出现几乎相同固件；报告未证明 AMD 直接供货、许可或已经违规。AMD 声明称说法歪曲其商业做法与关系，并称遵守出口管制。周四收 489.19（−7.72%，RVOL 1.50，低 470.56）。Nasdaq 05:08 ET 盘前 463.22（−5.31%），量 530,352 股，仍早但相对有量。",
+      "source": "CNBC/Reuters 转述 Hunterbrook 11-19; AMD statement to CNBC/Yahoo Finance; Nasdaq/TV premarket",
+      "ts_taipei": "2026-11-20 18:25",
+      "gap_pct": -5.31,
+      "rvol_prev": 1.5,
+      "attention": "高（ApeWisdom/WSB 第 3，提及 525 vs 24h 前 166）",
+      "level_above": 489.19,
+      "level_below": 470.56,
+      "evidence": "报告与否认均可核对，违规未成立；昨日已有量下跌，今日是跟进缺口；不把标题写成已执法",
+      "bias": "做空报告次日跟进；看是否跌破周四低或收回周四收盘",
+      "confirm": "09:40 ET 后 5 分钟收盘跌破 470.56（周四低）——空头跟进确认",
+      "invalid": "5 分钟收盘回到 489.19（周四收）上方"
+    },
+    {
+      "ticker": "WMT",
+      "rank": 3,
+      "score": 6.0,
+      "score_breakdown": {
+        "catalyst": 3.4,
+        "volume": 1.2,
+        "attention": 1.4
+      },
+      "catalyst": "11-19 07:00 ET 公司稿：Q3 营收 $188.8B（+5.2%，cc +4.5%），调整 EPS $0.65，GAAP EPS $0.62；上调 FY27 净销售 cc +4.9%–5.2%、调整营业利润 +8.0%–8.6%、调整 EPS $2.84–$2.89；库存 +8.1%。周四 RTH 已定价一截：收 126.04（−1.04%，高 126.95、低 123.27，RVOL 1.38），确认位 127.36/127.77 未碰到。今日 TV 盘前 128.42（+1.89%），量 33,837 股，偏早偏薄。",
+      "source": "Walmart company PR / BusinessWire 一手 11-19; ABC 等二手「指引偏保守」; TradingView/Nasdaq OHLC",
+      "ts_taipei": "2026-11-20 18:25",
+      "gap_pct": 1.89,
+      "rvol_prev": 1.38,
+      "attention": "中（公司稿与零售报道；非 WSB 前列）",
+      "level_above": 126.95,
+      "level_below": 126.04,
+      "evidence": "一手数字与上修可核对；RTH 先跌；库存 +8.1% 是稿件事实；盘前转正但量薄；「低于街预期」为二手",
+      "bias": "首段 RTH 已定价；今日是指引解读的隔夜跟进，量不能代替开盘后成交",
+      "confirm": "09:40 ET 后 5 分钟收盘站上 126.95（周四高）或 128.42（盘前参考，量薄）",
+      "invalid": "5 分钟收盘跌破 126.04（周四收）；更弱 123.27"
+    }
+  ],
+  "user_facing_scope": {
+    "note": "User-facing books are ETH /ES, RTH SPY (volume/RVOL/OHLC) and SPX (index levels only, no directly traded volume), and gold /GC. Keys named QQQ in this file are pipeline-continuity internals only and must not be read as S&P or converted into fake ES/SPY levels. S&P equity GEX is unavailable this date (gamma JSONDecodeError). scenarios=[].",
+    "ETH": "ES",
+    "RTH_volume": "SPY",
+    "RTH_index": "SPX",
+    "gold": "GC"
+  },
+  "structure_levels": {
+    "ES": {
+      "symbol": "CME_MINI:ES1!",
+      "session_provenance": {
+        "official_settle_2026-11-19": 7197.25,
+        "official_settle_source": "Yahoo ES=F prior settle; matches TV daily close of the completed 11-19 session",
+        "RTH_15m_2026-11-19": {
+          "open": 7411,
+          "high": 7436.5,
+          "high_time_et": "09:30",
+          "low": 7192,
+          "low_time_et": "15:00",
+          "close": 7194.25,
+          "window": "09:30-16:00 ET"
+        },
+        "post_cash_low": {
+          "px": 7167.75,
+          "time_et": "16:45",
+          "note": "daily-bar low, after 16:00 ET cash close; 16:15 bar close was 7184.50"
+        },
+        "overnight_ETH_after_1800_ET": {
+          "open": 7192.75,
+          "high": 7199.25,
+          "high_time_et": "18:00",
+          "low": 7138.75,
+          "low_time_et": "04:45",
+          "last": 7156.5,
+          "last_time_et": "05:00",
+          "source": "TV 15m as of ~18:00 Taipei",
+          "yahoo_0459_et": 7141.25
+        }
+      },
+      "above": [
+        7197.25,
+        7199.25
+      ],
+      "below": [
+        7138.75
+      ],
+      "basis_vs_SPX_close": {
+        "es_settle": 7197.25,
+        "spx_close": 7175.83,
+        "basis_points": 21.42,
+        "note": "do not equate raw points across ES/SPX/SPY"
+      }
+    },
+    "SPY": {
+      "symbol": "AMEX:SPY",
+      "session_provenance": {
+        "RTH_official_2026-11-19": {
+          "open": 737.46,
+          "high": 739.8999,
+          "low": 715.65,
+          "close": 715.87,
+          "volume_tv": 76702574,
+          "volume_nasdaq": 76112413,
+          "rvol": 1.31,
+          "rvol_window": "10 prior sessions 2026-11-05 through 2026-11-18, mean 58383140",
+          "clv": 0.009,
+          "source": "TradingView AMEX:SPY daily; Nasdaq volume alternative"
+        },
+        "premarket": {
+          "nasdaq_0508_et": {
+            "last": 711.0,
+            "pct": -0.68,
+            "volume": 363530,
+            "high": 714.96,
+            "high_time_et": "04:03:03",
+            "printed_low": 692.15,
+            "printed_low_time_et": "04:00:00",
+            "printed_low_status": "REJECTED as structure low; suspect bad tick vs ES overnight path"
+          },
+          "tv_later": {
+            "last": 712.36,
+            "pct": -0.49
+          }
+        }
+      },
+      "above": [
+        730.2,
+        726.795,
+        739.9
+      ],
+      "below": [
+        715.87,
+        715.65
+      ],
+      "do_not_use": [
+        692.15
+      ]
+    },
+    "SPX": {
+      "symbol": "SP:SPX",
+      "session_provenance": {
+        "official_RTH_2026-11-19": {
+          "open": 7389.26,
+          "high": 7415.64,
+          "low": 7173.63,
+          "close": 7175.83,
+          "chg_pct": -2.02,
+          "source": "TradingView SP:SPX daily official regular session"
+        },
+        "volume": "none_directly_traded"
+      },
+      "prior_close": 7175.83,
+      "above": [
+        7415.64
+      ],
+      "below": [
+        7173.63
+      ]
+    },
+    "GC": {
+      "symbol": "COMEX:GC1!",
+      "yahoo_symbol": "GC=F",
+      "session_provenance": {
+        "completed_session_2026-11-19": {
+          "open": 3730.3,
+          "high": 3759.5,
+          "low": 3620.6,
+          "close": 3685.5,
+          "chg_pct": -1.51,
+          "low_time_et": "16:30",
+          "note": "3620.6 is the latest official completed-session low; Yahoo 20d/52w low still 3620.6 at cutoff"
+        },
+        "overnight_ETH_after_1800_ET": {
+          "open": 3633.8,
+          "high": 3638.1,
+          "high_time_et": "18:00",
+          "low": 3514.9,
+          "low_time_et": "00:15",
+          "low_confirmed_on": "TV 15m bar volume 3115",
+          "last_0500_et": 3577,
+          "yahoo_0459_et": 3569.7,
+          "note": "3514.9 is an overnight ETH low, not yet an official settled daily low"
+        }
+      },
+      "above": [
+        3620.6,
+        3638.1,
+        3685.5
+      ],
+      "below": [
+        3514.9
+      ],
+      "no_equity_gex": true
+    }
+  }
+}

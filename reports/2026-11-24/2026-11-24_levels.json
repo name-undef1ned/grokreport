@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-24",
+  "asof_et": "2026-11-24T05:19:00-05:00",
+  "asof_taipei": "2026-11-24T18:19:00+08:00",
+  "scope": {
+    "ETH": "ES",
+    "RTH": [
+      "SPY",
+      "SPX"
+    ],
+    "gold": "GC",
+    "notes": "SPY used for RTH volume/RVOL/OHLC; SPX is the index and has no directly traded volume. ES official settlement is distinct from SPY/SPX 16:00 ET cash close and from any 16:15 snapshot."
+  },
+  "scenarios": [],
+  "symbols": {
+    "ES": {
+      "session": "ETH/CME Globex + official daily settle",
+      "source": "Yahoo ES=F (continuous) and 5-minute bars",
+      "prior_date": "2026-11-23",
+      "prior_open": 7023,
+      "prior_high": 7313.25,
+      "prior_low": 6992,
+      "prior_settle": 7254.5,
+      "prior_high_et": "10:30",
+      "prior_low_et": "2026-11-22 18:10",
+      "note_volume": "Yahoo daily volume 3032775 equals Friday print and is treated as suspect; 5m session sum ~2180095 used only as a cross-check.",
+      "overnight_open": 7272,
+      "overnight_high": 7298.25,
+      "overnight_low": 7215.75,
+      "overnight_last": 7224,
+      "overnight_last_et": "05:09",
+      "overnight_high_et": "20:10",
+      "overnight_low_et": "05:05",
+      "overnight_volume_5m_sum": 153801,
+      "basis_vs_spx_close_pts": 17.33,
+      "levels_up": [
+        7254.5,
+        7298.25,
+        7313.25
+      ],
+      "levels_down": [
+        7215.75,
+        6992,
+        6935
+      ]
+    },
+    "SPY": {
+      "session": "RTH 09:30-16:00 ET",
+      "source": "Yahoo daily + Nasdaq premarket 05:19 ET",
+      "prior_date": "2026-11-23",
+      "prior_open": 724.33,
+      "prior_high": 727.98,
+      "prior_low": 713.53,
+      "prior_close": 722.29,
+      "prior_chg_pct": 4.71,
+      "prior_volume": 88150300,
+      "avg_vol_10d": 62671220,
+      "rvol": 1.41,
+      "rvol_window": "prior 10 sessions mean from pipeline/Yahoo",
+      "clv": 0.606,
+      "gap_vs_prior_close_pct": 5,
+      "gap_filled": false,
+      "friday_close": 689.81,
+      "premarket_last": 718.7895,
+      "premarket_pct": -0.48,
+      "premarket_volume": 294725,
+      "premarket_high": 725.16,
+      "premarket_low": 718.42,
+      "premarket_high_et": "04:01:50",
+      "premarket_low_et": "05:05:18",
+      "premarket_quality": "early/thin vs RTH 88.2m",
+      "levels_up": [
+        722.29,
+        725.16,
+        727.98
+      ],
+      "levels_down": [
+        718.42,
+        713.53,
+        689.81
+      ]
+    },
+    "SPX": {
+      "session": "RTH cash index 09:30-16:00 ET",
+      "source": "Yahoo ^GSPC",
+      "prior_date": "2026-11-23",
+      "prior_open": 7227.41,
+      "prior_high": 7295.6,
+      "prior_low": 7152.66,
+      "prior_close": 7237.17,
+      "prior_chg_pct": 4.73,
+      "volume_note": "Yahoo volume field is not directly traded SPX volume; do not compute RVOL.",
+      "clv": 0.591,
+      "levels_up": [
+        7237.17,
+        7295.6
+      ],
+      "levels_down": [
+        7152.66,
+        6910.39
+      ]
+    },
+    "GC": {
+      "session": "CME Globex session; prior_* = last completed session",
+      "source": "Yahoo GC=F",
+      "prior_date": "2026-11-23",
+      "prior_open": 3570.5,
+      "prior_high": 3691,
+      "prior_low": 3552.3,
+      "prior_settle": 3651.4,
+      "prior_chg_pct": 3.87,
+      "overnight_open": 3636.4,
+      "overnight_high": 3676.7,
+      "overnight_low": 3606.4,
+      "overnight_last": 3620.6,
+      "overnight_last_et": "05:03",
+      "last_pct_vs_settle": -0.84,
+      "gex": null,
+      "gex_note": "GC futures have no equity-style GEX",
+      "levels_up": [
+        3651.4,
+        3676.7,
+        3691
+      ],
+      "levels_down": [
+        3606.4,
+        3552.3,
+        3515.4
+      ]
+    }
+  },
+  "cross_asset": {
+    "ust_10y": {
+      "value": 4.92,
+      "chg_bp": 0,
+      "date": "2026-11-23",
+      "source": "home.treasury.gov par yield curve"
+    },
+    "tips_10y": {
+      "value": 2.79,
+      "chg_bp": 2,
+      "date": "2026-11-23",
+      "source": "home.treasury.gov daily real yield curve",
+      "fred": "empty this run"
+    },
+    "dxy": {
+      "value": 104.183,
+      "chg_pct": -0.13,
+      "asof_et": "05:03"
+    },
+    "copper": [
+      {
+        "value": 5.458,
+        "chg_pct": -3.12,
+        "symbol": "COMEX:HG1!",
+        "source": "TradingView",
+        "note": "earlier this run"
+      },
+      {
+        "value": 5.452,
+        "chg_pct": -3.23,
+        "symbol": "HGZ26",
+        "source": "CNBC",
+        "asof_et": "05:03:48",
+        "settle": 5.634,
+        "settle_date": "2026-11-23"
+      }
+    ]
+  },
+  "gamma": {
+    "status": "unavailable",
+    "error": "equity gamma JSONDecodeError; not substituted onto ES/SPY"
+  },
+  "catalyst_stocks": [
+    {
+      "ticker": "NVDA",
+      "rank": 1,
+      "score": 8.3,
+      "score_breakdown": {
+        "catalyst": 4,
+        "volume": 2.3,
+        "attention": 2
+      },
+      "catalyst": "8-K（事件日 11-22）：董事会立即恢复 Huang 任总裁、CEO 并重返董事会；Kress 续任 CFO。独董调查与出口合规委员会仍将继续。周一收 165.05（+31.48%，低 156.93，高 171.50，RVOL 1.78，CLV 0.557）。昨日确认成立。Nasdaq 05:18 ET 盘前 157.39（-4.64%），量 7,507,945，高 164.40、低 156.51，相对有量但仍早。",
+      "source": "SEC 8-K nvda-20261122; Nvidia Newsroom PR; Yahoo daily; Nasdaq premarket 05:18 ET; Reuters/AP/CNBC 11-23 context",
+      "ts_taipei": "2026-11-24 18:18",
+      "gap_pct": -4.64,
+      "rvol_prev": 1.78,
+      "attention": "高（通讯社覆盖 + 盘前 750 万股；不把社媒热度写成仓位）",
+      "level_above": 164.4,
+      "level_below": 156.93,
+      "evidence": "职务恢复是已归档事实；调查与合规安排未结束；周一放量确认反弹；隔夜向周一低点回吐。不能从标题推断调查结束或已经定罪。",
+      "bias": "事件已在周一常规时段定价；看今日 RTH 是否承认隔夜回吐，而不是把盘前价当成定价。",
+      "confirm": "09:40 ET 后 5 分钟收盘跌破 156.93（周一低）。盘前低 156.51 只作早盘参考。",
+      "invalid": "09:40 ET 后 5 分钟收盘站上 164.40（盘前高）或 171.50（周一高）。"
+    },
+    {
+      "ticker": "DELL",
+      "rank": 2,
+      "score": 6,
+      "score_breakdown": {
+        "catalyst": 3,
+        "volume": 1.8,
+        "attention": 1.2
+      },
+      "catalyst": "今晚盘后财报（约 16:00–16:05 ET）仍待公布。周一收 334.91（+20.46%，低 322.31，高 379.03，RVOL 1.93，CLV 0.222），通讯社将其主要归为 Nvidia 回归的 AI 硬件跟涨，不是当日新的公司公告。Nasdaq 05:19 ET 盘前 315.01（-5.94%），量 108,326，偏早偏薄，低 315 已低于周一低。",
+      "source": "Company-scheduled AMC (events.json / TV previously confirmed; Newsquawk 16:05 ET); Yahoo daily; Nasdaq premarket 05:19 ET; CNBC/Barron's 11-23 sympathy coverage",
+      "ts_taipei": "2026-11-24 18:19",
+      "gap_pct": -5.94,
+      "rvol_prev": 1.93,
+      "attention": "中（财报预览报道；盘前量薄）",
+      "level_above": 334.91,
+      "level_below": 322.31,
+      "evidence": "有独立的今晚财报时钟，但周一涨幅主题纯度低、收盘质量差；盘前跌破周一低尚未被 RTH 确认。不预填财报结果。",
+      "bias": "先看常规时段是否承认跌破 322.31；财报是收盘后的另一件事。",
+      "confirm": "09:40 ET 后 5 分钟收盘跌破 322.31（周一低）。",
+      "invalid": "09:40 ET 后 5 分钟收盘站上 334.91 / 盘前高 334.55。"
+    }
+  ],
+  "evidence_gaps": [
+    "FRED DFII10 empty",
+    "Yahoo VIX spot failed",
+    "GEX failed",
+    "XLC Monday OHLC not fetched",
+    "ES daily volume suspect duplicate of Friday",
+    "BMO/AMC earnings after cutoff not included"
+  ]
+}

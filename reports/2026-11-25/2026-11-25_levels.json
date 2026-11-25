@@ -1,0 +1,243 @@
+{
+  "date": "2026-11-25",
+  "asof_et": "2026-11-25T05:15:00-05:00",
+  "asof_taipei": "2026-11-25T18:15:00+08:00",
+  "scope": {
+    "ETH": "ES",
+    "RTH": [
+      "SPY",
+      "SPX"
+    ],
+    "gold": "GC",
+    "notes": "SPY used for RTH volume/RVOL/OHLC; SPX is the index and has no directly traded volume. ES official settlement is distinct from SPY/SPX 16:00 ET cash close and from any 16:15 snapshot. Front contract ESZ2026 expires 2026-12-18."
+  },
+  "scenarios": [],
+  "symbols": {
+    "ES": {
+      "session": "ETH/CME Globex + official daily settle",
+      "source": "Yahoo ES=F (continuous) official settle/prior session; TradingView CME_MINI:ES1! 15-minute bars for overnight",
+      "contract": "ESZ2026",
+      "expiration": "2026-12-18",
+      "prior_date": "2026-11-24",
+      "prior_open": 7272.0,
+      "prior_high": 7298.25,
+      "prior_low": 7144.75,
+      "prior_settle": 7217.5,
+      "note_volume": "Yahoo daily volume 2313715 equals Monday print and is treated as suspect; not used for volume comparison.",
+      "overnight_open": 7212.5,
+      "overnight_high": 7224.0,
+      "overnight_low": 7100.75,
+      "overnight_last": 7114.5,
+      "overnight_last_et": "05:00-05:15 bar close",
+      "overnight_high_et": "18:00",
+      "overnight_low_et": "04:45",
+      "yahoo_last": 7119.5,
+      "yahoo_last_et": "approx 05:12",
+      "basis_vs_spx_close_pts": 16.41,
+      "levels_up": [
+        7217.5,
+        7224.0,
+        7298.25
+      ],
+      "levels_down": [
+        7144.75,
+        7100.75,
+        6935.0
+      ]
+    },
+    "SPY": {
+      "session": "RTH 09:30-16:00 ET",
+      "source": "Yahoo daily official OHLC/volume; Nasdaq premarket 05:06-05:07 ET",
+      "prior_date": "2026-11-24",
+      "prior_open": 715.15,
+      "prior_high": 720.93,
+      "prior_low": 712.14,
+      "prior_close": 718.78,
+      "prior_chg_pct": -0.49,
+      "prior_volume": 64228000,
+      "avg_vol_10d": 66507830,
+      "rvol_10d": 0.966,
+      "avg_vol_20d": 61140750,
+      "rvol_20d": 1.05,
+      "rvol_window": "prior 10 and 20 session means from Yahoo daily, excluding 11-24 itself",
+      "clv": 0.755,
+      "gap_vs_prior_close_pct": -0.99,
+      "gap_filled": false,
+      "monday_close": 722.29,
+      "premarket_last": 707.79,
+      "premarket_pct": -1.53,
+      "premarket_volume": 393793,
+      "premarket_high": 714.24,
+      "premarket_low": 707.26,
+      "premarket_high_et": "04:01:35",
+      "premarket_low_et": "04:48:18",
+      "premarket_source": "Nasdaq 05:06 ET last 707.79; pipeline also 708.87 with volume 393793",
+      "premarket_quality": "early/thin vs RTH 64.2m",
+      "levels_up": [
+        718.78,
+        720.93,
+        722.29
+      ],
+      "levels_down": [
+        707.26,
+        712.14,
+        689.81
+      ]
+    },
+    "SPX": {
+      "session": "RTH cash index 09:30-16:00 ET",
+      "source": "Yahoo ^GSPC",
+      "prior_date": "2026-11-24",
+      "prior_open": 7172.33,
+      "prior_high": 7223.95,
+      "prior_low": 7138.93,
+      "prior_close": 7201.09,
+      "prior_chg_pct": -0.5,
+      "volume_note": "Yahoo volume field is not directly traded SPX volume; do not compute RVOL.",
+      "clv": 0.731,
+      "levels_up": [
+        7201.09,
+        7223.95,
+        7237.17
+      ],
+      "levels_down": [
+        7138.93,
+        6910.39
+      ]
+    },
+    "GC": {
+      "session": "CME Globex session; prior_* = last completed session",
+      "source": "Yahoo GC=F for prior session; TradingView COMEX:GC1! 15-minute bars for overnight (preferred for last/low)",
+      "prior_date": "2026-11-24",
+      "prior_open": 3636.4,
+      "prior_high": 3676.7,
+      "prior_low": 3545.4,
+      "prior_settle": 3561.9,
+      "prior_chg_pct": -2.45,
+      "overnight_open": 3559.3,
+      "overnight_high": 3573.9,
+      "overnight_low": 3511.3,
+      "overnight_last": 3533.6,
+      "overnight_last_et": "05:00-05:15 bar close",
+      "overnight_high_et": "21:30",
+      "overnight_low_et": "01:45",
+      "yahoo_last_conflict": 3557.8,
+      "gex": null,
+      "gex_note": "GC futures have no equity-style GEX",
+      "levels_up": [
+        3561.9,
+        3573.9,
+        3676.7
+      ],
+      "levels_down": [
+        3545.4,
+        3511.3,
+        3502.9
+      ]
+    }
+  },
+  "cross_asset": {
+    "ust_10y": {
+      "value": 4.91,
+      "chg_bp": -1,
+      "date": "2026-11-24",
+      "source": "home.treasury.gov par yield curve"
+    },
+    "tips_10y": {
+      "value": 2.79,
+      "chg_bp": 0,
+      "date": "2026-11-24",
+      "source": "home.treasury.gov daily real yield curve",
+      "fred": "empty this run",
+      "prev_date": "2026-11-23"
+    },
+    "dxy": {
+      "value": 104.068,
+      "chg_pct": 0.25,
+      "asof_et": "04:57",
+      "source": "pipeline",
+      "tv_later": {
+        "value": 104.018,
+        "chg_pct": 0.16
+      }
+    },
+    "copper": [
+      {
+        "value": 5.331,
+        "chg_pct": -0.71,
+        "symbol": "COMEX:HG1!",
+        "source": "TradingView",
+        "note": "batch quote this run"
+      },
+      {
+        "value": 5.3205,
+        "chg_pct": -0.9,
+        "symbol": "HGZ26",
+        "source": "CNBC",
+        "asof_et": "04:56",
+        "settle": 5.369,
+        "settle_date": "2026-11-24"
+      }
+    ]
+  },
+  "gamma": {
+    "status": "unavailable",
+    "error": "equity gamma JSONDecodeError; not substituted onto ES/SPY"
+  },
+  "catalyst_stocks": [
+    {
+      "ticker": "DELL",
+      "rank": 1,
+      "score": 8.2,
+      "score_breakdown": {
+        "catalyst": 4,
+        "volume": 2.3,
+        "attention": 1.9
+      },
+      "catalyst": "盘后已公布 FY27 Q3。CNBC（16:29–17:07 ET）引 LSEG：调整后 EPS 9.45 对 6.59，营收 544.9 亿美元对 493.2 亿；ISG 419.7 亿对 352.7 亿，其中 AI 优化服务器 220 亿美元、同比 +291%；Q4 指引 EPS 8.40、营收约 563 亿，对共识 7.50 / 536.1 亿；并称授权 250 亿美元回购。CNBC 17:07 ET 仍写盘后上涨。截稿时 Nasdaq/流水线盘前约 273.27（约 −7.3% 至 −7.5%，量 743,051），TradingView 盘前/盘后区间高 297.37、低 270.51。数字尚未用公司 IR 表格逐项勾对。周二 RTH 已先跌 11.83%（低 290.50，CLV 0.172，RVOL 约 2.13）。",
+      "source": "CNBC 2026-11-24 16:29/17:07 ET; Dell IR PR URL (tables not tick-checked this run); Nasdaq/pipeline premarket ~05:07 ET; TradingView range; Tuesday OHLC Yahoo/Nasdaq",
+      "ts_taipei": "2026-11-25 18:15",
+      "gap_pct": -7.45,
+      "rvol_prev": 2.13,
+      "attention": "高（通讯社头线；WSB 提及 19→158、排名 35→3；盘前量相对有量但仍早）",
+      "level_above": 295.28,
+      "level_below": 270.51,
+      "evidence": "财报已发布是事实。CNBC 写的是高于共识的利润、营收、AI 服务器与上修指引，且 17:07 ET 仍描述盘后上涨；到 05:07 ET 盘前已回到 273 一带、低于周二低。不能把超预期自动写成应该上涨，也不能把盘前跌幅写成已证实派发。",
+      "bias": "先看常规时段是否承认跌破周二低/盘前低，而不是把盘前价当成定价。",
+      "confirm": "09:40 ET 后 5 分钟收盘仍低于 270.51（盘前低，早盘参考）或至少低于 290.50（周二低）。",
+      "invalid": "09:40 ET 后 5 分钟收盘站上 295.28（周二收）或 297.37（盘前/盘后高）。"
+    },
+    {
+      "ticker": "NVDA",
+      "rank": 2,
+      "score": 7.8,
+      "score_breakdown": {
+        "catalyst": 3,
+        "volume": 2.8,
+        "attention": 2
+      },
+      "catalyst": "无新的今日 8-K。主线是 11-22 职务恢复之后的价格回吐：周一 +31.48% 收 165.05，周二收 155.38（−5.86%，低 150.50，高 159.92，RVOL 0.81，CLV 0.518），已低于昨日确认位 156.93。Nasdaq 05:07 ET 盘前 147.13（−5.31%），量 5,160,738，高 152.50（04:01:37 ET）、低 146.31（04:43:29 ET）。调查与出口合规并未结束。主题与宽基高度重叠。",
+      "source": "Nasdaq premarket 05:07 ET; Yahoo/Nasdaq Tuesday daily; SEC 8-K nvda-20261122 (prior); DOJ/Commerce Megaspeed as previously reported",
+      "ts_taipei": "2026-11-25 18:15",
+      "gap_pct": -5.31,
+      "rvol_prev": 0.81,
+      "attention": "高（WSB 仍第一，提及 1558→627；盘前 516 万股，相对有量但仍早）",
+      "level_above": 152.5,
+      "level_below": 146.31,
+      "evidence": "已观察的是周一放量反弹被周二常规时段回吐，隔夜继续低于周二低。不能从盘前跌破推断买卖盘身份，也不能把调查标题写成今日新的定罪或结案。",
+      "bias": "事件定价发生在周一与周二；今日看常规时段是否承认隔夜跌破 150.50。",
+      "confirm": "09:40 ET 后 5 分钟收盘低于 146.31（盘前低，早盘参考）或至少低于 150.50（周二低）。",
+      "invalid": "09:40 ET 后 5 分钟收盘站上 152.50（盘前高）或 159.92（周二高）。"
+    }
+  ],
+  "evidence_gaps": [
+    "FRED DFII10 empty",
+    "GEX failed",
+    "Yahoo VIX spot daily fetch failed; CBOE:VIX close 29.58 used from TradingView",
+    "Yahoo GC=F last ~3557.8 conflicted with TV COMEX:GC1! 15m close 3533.6; overnight path uses TV",
+    "ES daily volume 2313715 equals Monday print, treated as suspect",
+    "Dell FY27 Q3 figures cited from CNBC/LSEG, not tick-checked to IR tables",
+    "X mention boards not pulled this run; Reddit RSS 429",
+    "Core PCE YoY not listed on this TV calendar pull"
+  ]
+}

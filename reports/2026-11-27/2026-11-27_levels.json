@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-27",
+  "asof_et": "2026-11-27T05:26:00-05:00",
+  "asof_taipei": "2026-11-27T18:26:00+08:00",
+  "scope": {
+    "ETH": {
+      "instrument": "/ES",
+      "yahoo": "ES=F",
+      "contract": "ESZ26",
+      "expiry": "2026-12-18",
+      "session": "CME Globex; Thursday 2026-11-26 traded until 13:00 ET then halted; Friday early close 13:15 ET; no Thursday official settlement"
+    },
+    "RTH": {
+      "volume_ohlc_rvol": "SPY",
+      "index_levels": "SPX",
+      "note": "SPX has no directly traded volume. Friday 2026-11-27 cash early close 13:00 ET. Prior complete RTH is Wednesday 2026-11-25; Thursday cash closed (Thanksgiving)."
+    },
+    "gold": {
+      "instrument": "/GC",
+      "yahoo": "GC=F",
+      "display": "Gold Dec 26",
+      "yahoo_contract_warning": "Yahoo fields mention both GCZ26 and GCG27; do not mix with spot or other months. Thursday metals traded until 14:30 ET; Friday early close 14:45 ET.",
+      "note": "GC futures technicals are not equity GEX"
+    },
+    "notes": "Independent catalyst_stocks remain core. scenarios=[]. Do not relabel Nasdaq/QQQ levels as S&P. EST (no DST)."
+  },
+  "scenarios": [],
+  "symbols": {
+    "ES": {
+      "source": "Yahoo ES=F",
+      "asof_et": "2026-11-27T05:26:00-05:00",
+      "contract": "ESZ26",
+      "expiry": "2026-12-18",
+      "open_interest": 2085588,
+      "prior_official_settle": 7195.75,
+      "prior_settle_date": "2026-11-25",
+      "prior_session_ohlc": {
+        "open": 7212.5,
+        "high": 7224,
+        "low": 6982.5,
+        "close": 7195.75,
+        "volume": 2129845
+      },
+      "friday_trade_date": {
+        "open": 7190.5,
+        "high": 7343,
+        "low": 7187,
+        "last": 7321.25,
+        "volume": 345302,
+        "note": "Yahoo daily/quote; 15m feed ends 2026-11-25 23:45 ET so high/low timestamps after that are coarse"
+      },
+      "last": 7321.25,
+      "change_vs_settle_pct": 1.744,
+      "basis_vs_spx_wed_close": {
+        "es_settle": 7195.75,
+        "spx_close": 7182.78,
+        "premium_pts": 12.97,
+        "note": "Wednesday cash close basis only; overnight ES vs stale SPX is not a live cash-session basis"
+      },
+      "levels": [
+        {
+          "px": 7343,
+          "side": "resistance",
+          "sources": "Friday trade-date high (Yahoo quote/daily)"
+        },
+        {
+          "px": 7253.75,
+          "side": "resistance",
+          "sources": "15m high 2026-11-25 23:30 ET"
+        },
+        {
+          "px": 7224,
+          "side": "resistance",
+          "sources": "Wednesday daily/ETH high, 2026-11-24 18:00 ET bar"
+        },
+        {
+          "px": 7195.75,
+          "side": "support",
+          "sources": "Wednesday official settlement"
+        },
+        {
+          "px": 7187,
+          "side": "support",
+          "sources": "Friday trade-date low; also near 2026-11-25 18:00 ET"
+        },
+        {
+          "px": 6982.5,
+          "side": "support",
+          "sources": "Wednesday session low 09:45 ET"
+        }
+      ]
+    },
+    "SPY": {
+      "source": "Yahoo daily + Nasdaq premkt",
+      "prior_rth_date": "2026-11-25",
+      "prior_rth_ohlc": {
+        "open": 703.2,
+        "high": 718.43,
+        "low": 695.45,
+        "close": 716.7,
+        "volume": 73112800
+      },
+      "prior_rth_chg_pct": -0.289,
+      "rvol_10": 1.062,
+      "rvol_20": 1.162,
+      "mean_volume_10": 68872290,
+      "mean_volume_20": 62926325,
+      "clv": 0.925,
+      "gap": {
+        "prior_close": 718.78,
+        "open": 703.2,
+        "gap_pct": -2.168,
+        "high": 718.43,
+        "filled": false
+      },
+      "premkt": {
+        "last": 729.2038,
+        "pct": 1.74,
+        "volume": 260009,
+        "high": 731.485,
+        "high_et": "04:07:32",
+        "low": 727.98,
+        "low_et": "04:02:38",
+        "asof_et": "05:25",
+        "label": "thin/early"
+      },
+      "levels": [
+        {
+          "px": 731.485,
+          "side": "resistance",
+          "sources": "Nasdaq PM high 04:07:32 ET, thin"
+        },
+        {
+          "px": 718.78,
+          "side": "resistance",
+          "sources": "Tuesday RTH close, unfilled gap"
+        },
+        {
+          "px": 718.43,
+          "side": "resistance",
+          "sources": "Wednesday RTH high"
+        },
+        {
+          "px": 716.7,
+          "side": "support",
+          "sources": "Wednesday RTH close"
+        },
+        {
+          "px": 703.2,
+          "side": "support",
+          "sources": "Wednesday RTH open"
+        },
+        {
+          "px": 695.45,
+          "side": "support",
+          "sources": "Wednesday RTH low 09:45 ET"
+        }
+      ]
+    },
+    "SPX": {
+      "source": "Yahoo ^GSPC",
+      "note": "Index levels only; volume field is not traded SPX volume and must not be used as RVOL",
+      "prior_rth_date": "2026-11-25",
+      "prior_rth_ohlc": {
+        "open": 7060.33,
+        "high": 7199.31,
+        "low": 6970.11,
+        "close": 7182.78
+      },
+      "prior_rth_chg_pct": -0.25,
+      "clv": 0.928,
+      "gap": {
+        "prior_close": 7201.09,
+        "open": 7060.33,
+        "high": 7199.31,
+        "filled": false
+      },
+      "levels": [
+        {
+          "px": 7201.09,
+          "side": "resistance",
+          "sources": "Tuesday close, unfilled"
+        },
+        {
+          "px": 7199.31,
+          "side": "resistance",
+          "sources": "Wednesday high"
+        },
+        {
+          "px": 7182.78,
+          "side": "support",
+          "sources": "Wednesday close"
+        },
+        {
+          "px": 6970.11,
+          "side": "support",
+          "sources": "Wednesday low"
+        }
+      ]
+    },
+    "GC": {
+      "source": "Yahoo GC=F",
+      "asof_et": "2026-11-27T05:26:00-05:00",
+      "display": "Gold Dec 26",
+      "prior_session_date": "2026-11-25",
+      "prior_session_ohlc": {
+        "open": 3559.3,
+        "high": 3588.9,
+        "low": 3425.2,
+        "close": 3535.8,
+        "volume": 124601,
+        "note": "daily low 3425.2 has no 15m timestamp; 15m RTH low was 3453.8 at 10:15 ET"
+      },
+      "friday_trade_date": {
+        "open": 3619.8,
+        "high": 3712.8,
+        "low": 3578.8,
+        "last": 3698.5,
+        "volume": 152757,
+        "yahoo_previous_close_field": 3564.6,
+        "last_vs_previous_close_pct": 3.756,
+        "last_vs_daily_close_3535_8_pct": 4.6
+      },
+      "last": 3698.5,
+      "bid": 3593.9,
+      "ask": 3593.5,
+      "last_vs_bid_ask_conflict": true,
+      "sma20": 3871.38,
+      "sma50": 4064.4,
+      "sma200": 4422.97,
+      "rsi14": 29.2,
+      "atr14": 118.61,
+      "levels": [
+        {
+          "px": 3712.8,
+          "side": "resistance",
+          "sources": "Yahoo Friday trade-date high, TV not cross-checked"
+        },
+        {
+          "px": 3634.7,
+          "side": "resistance",
+          "sources": "15m high 2026-11-25 21:30 ET"
+        },
+        {
+          "px": 3578.8,
+          "side": "support",
+          "sources": "15m low 2026-11-25 20:00 ET / Friday trade-date low"
+        },
+        {
+          "px": 3535.8,
+          "side": "support",
+          "sources": "Wednesday daily close"
+        },
+        {
+          "px": 3453.8,
+          "side": "support",
+          "sources": "15m low 2026-11-25 10:15 ET"
+        },
+        {
+          "px": 3425.2,
+          "side": "support",
+          "sources": "Wednesday daily low, timestamp missing in 15m"
+        }
+      ]
+    }
+  },
+  "cross_asset": {
+    "ust_10y": {
+      "value": 4.85,
+      "chg_bp": -6,
+      "date": "2026-11-25",
+      "source": "Treasury par yield curve"
+    },
+    "ust_2y": {
+      "value": 4.61,
+      "chg_bp": -2,
+      "date": "2026-11-25",
+      "source": "Treasury par yield curve"
+    },
+    "tips_10y": {
+      "value": 2.73,
+      "chg_bp": -6,
+      "date": "2026-11-25",
+      "source": "Treasury real yield curve",
+      "fred_dfii10": "empty/failed this run"
+    },
+    "dxy": {
+      "last": 103.855,
+      "prior_close": 103.665,
+      "chg_pct": 0.183,
+      "asof_et": "2026-11-27T05:26:00-05:00",
+      "source": "Yahoo DX-Y.NYB"
+    },
+    "copper": {
+      "cnbc_hgc1": {
+        "last": 5.5915,
+        "prev_settle": 5.3365,
+        "settle_date": "2026-11-25",
+        "pct": 4.78,
+        "asof_et": "2026-11-27T05:03:49-05:00",
+        "source": "CNBC HGc1"
+      },
+      "yahoo_hgf": {
+        "last": 5.672,
+        "previous_close": 5.4215,
+        "high": 5.7605,
+        "low": 5.4285,
+        "contract": "Copper Mar 27",
+        "asof_et": "2026-11-27T05:26:00-05:00",
+        "source": "Yahoo HG=F",
+        "bid_ask_conflict": true
+      },
+      "tv_comex_hg1": "not fetched this run"
+    },
+    "wti": {
+      "last": 85.79,
+      "previous_close": 83.68,
+      "chg_pct": 2.52,
+      "contract": "CLF27",
+      "source": "Yahoo CL=F",
+      "asof_et": "2026-11-27T05:26:00-05:00"
+    },
+    "brent": {
+      "last": 92.49,
+      "previous_close": 90.64,
+      "chg_pct": 2.04,
+      "source": "Yahoo BZ=F",
+      "note": "Do not use Wednesday daily close 94.61 as previous close"
+    },
+    "vix": {
+      "close_2026_11_25": 28.29,
+      "yahoo_asof": 24.94,
+      "yahoo_prev_field": 26.8,
+      "note": "11-26 was a cash holiday; Yahoo 11-26/11-27 prints are not treated as official RTH closes"
+    },
+    "fear_greed": {
+      "score": 17.9,
+      "rating": "extreme fear",
+      "ts": "2026-11-27T10:01:01+00:00",
+      "prev_close": 15.6,
+      "source": "CNN Fear & Greed"
+    }
+  },
+  "gamma": {
+    "status": "unavailable",
+    "error": "CBOE delayed options JSON decode failed; no QQQ/NQ GEX substituted for S&P"
+  },
+  "catalyst_stocks": [
+    {
+      "ticker": "VRTX",
+      "rank": 1,
+      "score": null,
+      "score_note": "no invented precision; thin PM volume precludes a defensible numeric score",
+      "catalyst": "FDA extended PDUFA for povetacicept IgAN BLA by up to 3 months, to no later than 2027-02-28 (company PR 2026-11-25; FDA notice 2026-11-24)",
+      "source": "https://investors.vrtx.com/news-releases/news-release-details/vertex-announces-extension-pdufa-target-action-date-three-months",
+      "ts_taipei": "2026-11-27T18:26:00+08:00",
+      "gap_pct": -7.36,
+      "rvol_prev": 1.268,
+      "attention": "Company PR + financial press; StockTwits snapshot did not list VRTX; PM volume extremely thin",
+      "level_above": 550.56,
+      "level_below": 520.25,
+      "evidence": "Wed RTH 563.54/571.75/550.56/564.12, +0.04%, RVOL10 1.268, CLV 0.640. Nasdaq PM 05:26 ET 522.60 (-7.36%), volume 7734, high 542 (04:01:47), low 520.25 (04:36:21). Volume too thin to treat as traded evidence.",
+      "bias": "event-driven gap down, unconfirmed by RTH",
+      "confirm": "RTH (early close 13:00 ET) volume near recent normal and acceptance below 550.56",
+      "invalid": "reclaim 564.12, or quickly reclaim Wednesday low with meaningful volume"
+    },
+    {
+      "ticker": "DELL",
+      "rank": 2,
+      "score": null,
+      "score_note": "no invented precision; earnings follow-through still awaiting short-session confirmation",
+      "catalyst": "Follow-through pricing of FY27 Q3 results released after the close 2026-11-24; Wednesday already filled the downside gap on elevated volume",
+      "source": "Company IR press release previously cited; figures from CNBC still pending IR tick-check. Prices: Yahoo daily + Nasdaq premkt 05:26 ET",
+      "ts_taipei": "2026-11-27T18:26:00+08:00",
+      "gap_pct": 5.77,
+      "rvol_prev": 2.48,
+      "attention": "Still an active post-earnings name; not proof of crowding",
+      "level_above": 319.5,
+      "level_below": 297.89,
+      "evidence": "Wed RTH 267.57/297.89/265.00/297.06, +0.60%, gap from 295.28 filled, CLV 0.975, RVOL10 2.480. Nasdaq PM 05:26 ET 314.19 (+5.77%), volume 253314, high 319.50 (04:28:44), low 307.80 (04:02:43). PM volume early vs 26.7M Wednesday shares.",
+      "bias": "post-earnings recovery continuation in PM, unconfirmed by Friday RTH; theme overlaps AI/index",
+      "confirm": "short RTH holds above 297.89 and does not close back below 297.06",
+      "invalid": "back below 297.06, or a renewed move toward 265 on expanding volume"
+    }
+  ],
+  "evidence_gaps": [
+    "FRED DFII10 empty again; used Treasury real yield curve 2026-11-25",
+    "GEX/CBOE chain failed; no S&P dealer gamma",
+    "TradingView COMEX:GC1! and COMEX:HG1! not cross-checked this run",
+    "Yahoo ES/GC 15m ends 2026-11-25 23:45 ET; Thursday shortened session and Friday early path lack 15m timestamps",
+    "Yahoo GC last ~3698.5 conflicts with bid/ask ~3593.9/3593.5",
+    "Yahoo copper and silver also show last vs bid/ask conflicts; copper contract shown as Mar 27",
+    "X timeline not independently refreshed",
+    "7-year auction details from secondary sources, Treasury official page not ticked",
+    "ISM/ADP/claims next-week times from secondary calendars except BLS and Fed official pages",
+    "VIX 11-26/11-27 Yahoo prints not treated as official cash closes"
+  ]
+}
